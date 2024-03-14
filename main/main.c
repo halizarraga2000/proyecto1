@@ -26,9 +26,10 @@ void app_main(void)
     {
         printf("Hola Mundo\r\n");
         gpio_set_level(2, 0);
-        vTaskDelay(pdMS_TO_TICKS(1000));
+        vTaskDelay(pdMS_TO_TICKS(500));
         gpio_set_level(2, 1);
-        vTaskDelay(pdMS_TO_TICKS(1000));
+        vTaskDelay(pdMS_TO_TICKS(500));
+
         
     }
 
